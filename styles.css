@@ -1,0 +1,91 @@
+:root {
+  --espresso: #3b2418;
+  --roast: #6f4e37;
+  --cream: #faf4ea;
+  --latte: #e8d8c3;
+  --leaf: #4f7a4a;
+  --text: #2d2118;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--cream);
+}
+header {
+  background: var(--espresso);
+  color: var(--cream);
+  text-align: center;
+  padding: 2.5rem 1rem 2rem;
+  border-bottom: 5px solid var(--leaf);
+}
+header h1 { margin: 0; font-size: 2.4rem; letter-spacing: 1px; }
+hr { display: none; }
+nav {
+  background: var(--roast);
+  text-align: center;
+  padding: .8rem 1rem;
+  color: var(--latte);
+  position: sticky;
+  top: 0;
+}
+nav a {
+  color: var(--cream);
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  padding: .4rem .9rem;
+  border-radius: 20px;
+  display: inline-block;
+  transition: background .2s;
+}
+nav a:hover { background: var(--leaf); }
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(59, 36, 24, .12);
+}
+h2 {
+  color: var(--roast);
+  border-bottom: 2px solid var(--latte);
+  padding-bottom: .3rem;
+  margin-top: 2rem;
+}
+h3 { color: var(--leaf); margin-bottom: .2rem; }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  background: var(--latte);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+}
+section {
+  background: var(--cream);
+  border-left: 5px solid var(--roast);
+  border-radius: 8px;
+  padding: .5rem 1.5rem 1rem;
+  margin-bottom: 1.5rem;
+}
+section h2 { border: none; margin-top: 1rem; }
+address { font-style: normal; background: var(--cream); padding: .5rem 1.2rem; border-radius: 8px; }
+main a { color: var(--leaf); font-weight: bold; }
+main a:hover { color: var(--espresso); }
+footer {
+  background: var(--espresso);
+  color: var(--latte);
+  text-align: center;
+  padding: 1.2rem;
+  font-size: .9rem;
+}
+footer p { margin: 0; }
+@media (max-width: 600px) {
+  header h1 { font-size: 1.6rem; }
+  main { margin: 1rem; padding: 1.2rem; }
+}
